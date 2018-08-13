@@ -1,10 +1,11 @@
 div {
-  outline: 1px rgba(255,0,0,0.1) solid;
+  outline: 1px rgba(225,225,225,0.5) solid;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 
 body {
+  width: 50%;
   background-color: #930909;
   color: #edbe00;
   font-family: 'yanone Kaffeesatz', sans-serif;
@@ -12,22 +13,31 @@ body {
 }
 
 #MainVeiw {
+  width: 50%;
   display: grid;
-  margin: auto;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2;
+}
+
+#Options {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#AllergyStuff {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 #DataBaseVeiw {
   grid-column: 2;
+  grid-row: auto;
   width: 50%;
   height: 50px;
   overflow-y: scroll;
 }
 
 /* descendant selectors */
+#MainView h1 {
 
-#MainVeiw div {
-  grid-column: 2;
-  margin: 0 1em;
 }
