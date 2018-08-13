@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Mcdonalds Food Info{% endblock %}
+{% block description %}...{% endblock %}
+{% block stylesheet %}{{ url_for('static', filename='style.css') }}{% endblock %}
+
+{% block content %}
+  <div id='MainView'>
+    <h1> mcdonalds food stuff</h1>
+    <div id="Options">
+      <input type="checkbox" name="Special1" value="ReverseVeiw"> show foods with allergins<br>
+      <input type="checkbox" name="Special2" value="ShowTrace"> show foods with traces of<br>
+    </div>
+
+    <div id="AllergyStuff">
+      <input type="checkbox" name="allergy" value="allergy"> allergy<br>
+      <input type="checkbox" name="allergy" value="allergy"> allergy<br>
+      <input type="checkbox" name="allergy" value="allergy"> allergy<br>
+      <input type="checkbox" name="allergy" value="allergy"> allergy<br>
+      <input type="checkbox" name="allergy" value="allergy"> allergy<br>
+      <input type="checkbox" name="allergy" value="allergy"> allergy<br>
+      <input type="checkbox" name="allergy" value="allergy"> allergy<br>
+      <input type="checkbox" name="allergy" value="allergy"> allergy<br>
+      <input type="checkbox" name="allergy" value="allergy"> allergy<br>
+    </div>
+
+    <div id='DataBaseVeiw'>
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+      blah blah blah blah blah blah blah blah blah
+    </div>
+  </div>
+{% endblock %}

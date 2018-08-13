@@ -1,0 +1,33 @@
+div {
+  outline: 1px rgba(255,0,0,0.1) solid;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+
+body {
+  background-color: #930909;
+  color: #edbe00;
+  font-family: 'yanone Kaffeesatz', sans-serif;
+  margin: 0;
+}
+
+#MainVeiw {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+#DataBaseVeiw {
+  grid-column: 2;
+  width: 50%;
+  height: 50px;
+  overflow-y: scroll;
+}
+
+/* descendant selectors */
+
+#MainVeiw div {
+  grid-column: 2;
+  margin: 0 1em;
+}
